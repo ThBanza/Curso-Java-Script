@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro Programa</title>
-    <link rel="stylesheet" href="style.css">
+    <title>exercicio3</title>
+    <style>
+        body{
+    background-color: rgba(8, 8, 255, 0.281);
+    color: blueviolet;
+    font: normal 20pt arial ;  /* comentario no css   */
+}
+
+h1{
+    color: black;
+}
+    </style>
 </head>
 <body>
-    <h1>Teste com JS</h1>   
+    <h1>Teste com JS</h1>    <!--pergunta sobre seu nome. !-->
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates provident, asperiores iusto autem cumque culpa consectetur cum velit et maxime saepe? A harum vero, velit saepe ipsam temporibus magni ipsum.</p>
 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ad totam recusandae accusantium repellat atque nam voluptatibus mollitia eaque rem. Explicabo iusto sunt eveniet aut et sint culpa aliquid commodi.</p>
     <script>
-        alert ('Seja Bem-Vindo')
-        confirm ('Esta gostando do JS?')
-        prompt ('Qual é seu nome?')
+        var n1 = Number(prompt ('Digite um numero:'))
+        var n2 = Number(prompt ('Digite outro numero:'))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`); 
+         //window.alert('A soma entre ' + n1 + ' e ' + n2 + ' é igual a ' + s); pode ser esse tambem
     </script>
 </body>
 </html>
